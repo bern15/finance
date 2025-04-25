@@ -42,8 +42,7 @@ finance/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/finance-system.git
-cd finance-system/finance
+git clone https://github.com/bern15/finance.git
 ```
 
 ### 2. Setup Your Environment
@@ -141,4 +140,3 @@ Feel free to fork this repo, suggest features, or submit pull requests.
 
 For questions or ideas:
 - GitHub Issues
-- [Your email/contact info]
