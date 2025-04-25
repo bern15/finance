@@ -1,0 +1,335 @@
+/* Main Styles for Finance Application */
+
+/* General styling */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+/* Navigation & Header */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #fff;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+}
+
+/* Dashboard cards */
+.dashboard-widget {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.widget-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.widget-success {
+    background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.widget-info {
+    background: linear-gradient(45deg, #17a2b8, #117a8b);
+}
+
+.widget-warning {
+    background: linear-gradient(45deg, #ffc107, #d39e00);
+}
+
+.border-left-primary {
+    border-left: 5px solid var(--primary-color);
+}
+
+.border-left-success {
+    border-left: 5px solid var(--success-color);
+}
+
+.border-left-warning {
+    border-left: 5px solid var(--warning-color);
+}
+
+.border-left-info {
+    border-left: 5px solid #36b9cc;
+}
+
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    border-top: none;
+    background-color: #6c757d;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    padding: 0.5rem 0.75rem;
+}
+
+.table td.text-right, .table th.text-right {
+    text-align: right;
+    padding-right: 1.25rem;
+}
+
+.table .btn-group {
+    white-space: nowrap;
+}
+
+.table .btn-sm {
+    padding: 0.25rem 0.5rem;
+    margin: 0 1px;
+}
+
+.table thead tr:first-child th {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.table tbody tr td:nth-child(4),
+.table tbody tr td:nth-child(8) {
+    border-right: 2px solid #6c757d;
+}
+
+.table tbody tr td.bg-light {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #6c757d;
+}
+
+.journal-table-section .table input {
+    min-height: 35px;
+}
+
+.journal-table-section .table input.date-input {
+    min-width: 140px;
+}
+
+.journal-table-section .table input.form-control-sm {
+    font-size: 0.9rem;
+}
+
+.journal-table-section .table-sm td, 
+.journal-table-section .table-sm th {
+    padding: 0.5rem 0.5rem;
+}
+
+.ledger-table {
+    border: 2px solid #343a40;
+}
+
+.ledger-table th, 
+.ledger-table td {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.ledger-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.ledger-table .border-right {
+    border-right: 2px solid #343a40 !important;
+}
+
+.ledger-table .account-header {
+    background-color: #e9ecef;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 2px solid #343a40;
+}
+
+.ledger-table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.ledger-table td.text-right {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--light-color);
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Forms */
+.form-control {
+    border-radius: var(--border-radius);
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Alerts */
+.alert {
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Trial Balance */
+.trial-balance-totals {
+    font-weight: bold;
+    border-top: 2px solid #343a40;
+}
+
+/* T-Account Styling */
+.t-account {
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+.t-account-header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+.t-account-body {
+    display: flex;
+}
+
+.t-account-debit, .t-account-credit {
+    flex: 1;
+    padding: 10px;
+}
+
+.t-account-debit {
+    border-right: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-header h3, 
+    .card-header h2 {
+        font-size: 1.3rem;
+    }
+}

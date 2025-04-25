@@ -1,0 +1,144 @@
+/* Dashboard specific styles */
+
+/* Chart container */
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+
+/* Summary cards */
+.dashboard-summary-card {
+    transition: transform 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-summary-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Activity chart card */
+.activity-chart-card {
+    margin-bottom: 30px;
+}
+
+/* Stat cards with icons */
+.stat-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.stat-card-icon {
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-card-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.stat-card-content h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #6c757d;
+}
+
+.stat-card-content h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Color schemes */
+.icon-primary {
+    background-color: rgba(78, 115, 223, 0.1);
+    color: #4e73df;
+}
+
+.icon-success {
+    background-color: rgba(28, 200, 138, 0.1);
+    color: #1cc88a;
+}
+
+.icon-info {
+    background-color: rgba(54, 185, 204, 0.1);
+    color: #36b9cc;
+}
+
+.icon-warning {
+    background-color: rgba(246, 194, 62, 0.1);
+    color: #f6c23e;
+}
+
+/* Welcome box */
+.welcome-box {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.welcome-box h3 {
+    margin-bottom: 20px;
+}
+
+/* Recent activity section */
+.recent-activity-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.activity-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+/* Quick stats cards */
+.quick-stat {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.quick-stat h5 {
+    color: #6c757d;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.quick-stat p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chart-container {
+        height: 250px;
+    }
+    
+    .stat-card-content h2 {
+        font-size: 1.5rem;
+    }
+}

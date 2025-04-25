@@ -1,0 +1,77 @@
+/* Trial Balance specific styles */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+#trial-balance-table {
+    min-width: 100%;
+}
+
+#trial-balance-table th {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#trial-balance-table td input {
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+#trial-balance-table td input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+
+#trial-balance-table td input[readonly] {
+    background-color: #e9ecef;
+}
+
+#trial-balance-table td input[type="number"] {
+    text-align: right;
+}
+
+/* Hide arrows from number inputs */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.account-row:hover {
+    background-color: #f2f2f2;
+}
+
+#add-row-btn {
+    transition: all 0.3s;
+}
+
+#add-row-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Totals row styling */
+tfoot tr {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+tfoot td {
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

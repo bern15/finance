@@ -1,0 +1,200 @@
+/* Computations specific styles */
+
+/* Computation container */
+.computation-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+/* T-account styling */
+.t-account {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.t-account th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.t-account tbody tr:first-child td {
+    border-top: 2px solid #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+.t-account tbody tr:not(:first-child) td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.t-account .debit-side, .t-account .credit-side {
+    width: 50%;
+    vertical-align: top;
+}
+
+/* Computation form */
+.computation-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group-inline label {
+    margin-bottom: 0;
+    flex: 0 0 100px;
+}
+
+.amount-input {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    width: 150px;
+}
+
+/* Results section */
+.computation-results {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.computation-results h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+}
+
+.result-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.balance-positive {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.balance-negative {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Ledger styles */
+.ledger-account-header {
+    background-color: #e9ecef;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.ledger-entry {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ledger-entry:last-child {
+    border-bottom: none;
+}
+
+.ledger-date {
+    flex: 0 0 100px;
+}
+
+.ledger-description {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.ledger-amount {
+    flex: 0 0 120px;
+    text-align: right;
+    font-family: 'Courier New', monospace;
+}
+
+/* Cash flow report */
+.cash-flow-summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cash-flow-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.cash-flow-card h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.cash-flow-card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.cash-increase {
+    color: #28a745;
+}
+
+.cash-decrease {
+    color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cash-flow-summary {
+        flex-direction: column;
+    }
+    
+    .amount-input {
+        width: 100%;
+    }
+    
+    .form-group-inline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .form-group-inline label {
+        margin-bottom: 5px;
+    }
+}

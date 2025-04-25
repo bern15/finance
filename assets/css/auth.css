@@ -1,0 +1,195 @@
+/* Authentication specific styles */
+
+/* Login & Register containers */
+.auth-container {
+    max-width: 450px;
+    margin: 80px auto;
+}
+
+.auth-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.auth-header {
+    background-color: #3498db;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.auth-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.auth-body {
+    padding: 30px;
+}
+
+.auth-footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #f1f1f1;
+    background-color: #f8f9fa;
+}
+
+/* Form styling */
+.auth-form .form-group {
+    margin-bottom: 25px;
+}
+
+.auth-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #495057;
+}
+
+.auth-form .form-control {
+    height: 45px;
+    font-size: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.auth-form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.auth-form .btn {
+    height: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Auth links */
+.auth-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* User profile styles */
+.profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.profile-header {
+    background-color: #3498db;
+    color: white;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar i {
+    font-size: 50px;
+    color: #3498db;
+}
+
+.profile-details {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details .row {
+    margin-bottom: 30px;
+}
+
+/* Activity log */
+.activity-log {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.activity-icon.login {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.activity-icon.logout {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.activity-icon.register {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.activity-info {
+    flex: 1;
+}
+
+.activity-time {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-container {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .auth-header {
+        padding: 20px;
+    }
+    
+    .auth-body {
+        padding: 20px;
+    }
+}

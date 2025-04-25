@@ -1,0 +1,137 @@
+/* Journal entries specific styles */
+
+/* Journal table */
+.journal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.journal-table thead th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+}
+
+.journal-table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.journal-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.journal-table tbody td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* Journal entry create/edit form */
+.journal-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.journal-form .form-group {
+    margin-bottom: 20px;
+}
+
+.journal-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.journal-table-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+/* Account dropdown styling */
+.account-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* Amount fields formatting */
+.amount-input {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+}
+
+/* Entry details */
+.entry-details-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.entry-details-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry-details-body {
+    padding: 20px;
+}
+
+.entry-details-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+}
+
+/* Add row buttons */
+.add-row-btn {
+    background-color: #f8f9fa;
+    border: 1px dashed #ccc;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+
+.add-row-btn:hover {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+/* Action buttons within tables */
+.action-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.action-btns .btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .journal-table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .journal-form {
+        padding: 15px;
+    }
+}
